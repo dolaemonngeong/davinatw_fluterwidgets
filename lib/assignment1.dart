@@ -49,19 +49,46 @@ class _Assignment1PageState extends State<Assignment1Page> {
                 ),
                 Flexible(
                   flex: 1,
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(12),
-                      child: Image.asset(
-                        'images/expandables.jpeg',
-                        fit: BoxFit.cover
+                  child: Row(
+                    children: [
+                      Flexible(
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(12),
+                          child: Image.asset(
+                            'images/foto2.jpeg',
+                            fit: BoxFit.cover
+                          ),
+                          )
                       ),
-                    )
-                  ),
+                      Flexible(
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(12),
+                          child: Image.asset(
+                            'images/foto3.jpeg',
+                            fit: BoxFit.cover
+                          ),
+                          )
+                      ),
+                      Flexible(
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(12),
+                          child: Image.asset(
+                            'images/foto4.jpeg',
+                            fit: BoxFit.cover
+                          ),
+                          )
+                      ),
+                      Flexible(
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(12),
+                          child: Image.asset(
+                            'images/foto5.jpeg',
+                            fit: BoxFit.cover
+                          ),
+                          )
+                      ),
+                    ],
+                  )
                 ),
                 Flexible(
                   flex: 4,
