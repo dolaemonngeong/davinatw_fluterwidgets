@@ -1,3 +1,4 @@
+import 'package:davinatw_fluterwidgets/form.dart';
 import 'package:flutter/material.dart';
 
 class Assignment1Page extends StatefulWidget {
@@ -139,6 +140,119 @@ class _Assignment1PageState extends State<Assignment1Page> {
                       child: Icon(Icons.favorite, color: iconColor), 
                     ),
                   ),
+
+                  Positioned(
+                    bottom: 10,
+                    right: 10,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(25.0),
+                      ),
+                      child: Ink(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(25.0),
+                          gradient: LinearGradient(
+                            begin: Alignment.topRight,
+                            end: Alignment.bottomLeft,
+                            colors: [
+                              Colors.blue,
+                              Colors.red,
+                            ],
+                          ),
+                        ),
+                        child: ElevatedButton(
+                          onPressed: () { 
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context){
+                                return FormPage();
+                              })
+                            );
+                          },
+                          child: Text("Book Now"),
+                          style: ElevatedButton.styleFrom(
+                            shadowColor: Colors.white,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(25.0),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  )
+
+
+                  // Container(
+                  //   decoration: const BoxDecoration(
+                  //     gradient: LinearGradient(
+                  //       begin: Alignment.topRight,
+                  //       end: Alignment.bottomLeft,
+                  //       colors: [
+                  //         Colors.white,
+                  //         Colors.blue,
+                  //       ],
+                  //     ),
+                  //   ),
+                  //   child: Positioned(
+                  //     bottom: 10,
+                  //     right: 10,
+                  //     child: Container(
+                  //       decoration: const BoxDecoration(
+                  //       gradient: LinearGradient(
+                  //         begin: Alignment.topRight,
+                  //         end: Alignment.bottomLeft,
+                  //         colors: [
+                  //           Colors.white,
+                  //           Colors.blue,
+                  //         ],
+                  //       ),
+                  //     ),
+                  //       child: ElevatedButton(
+                  //         onPressed: () { 
+                  //           Navigator.push(
+                  //             context,
+                  //             MaterialPageRoute(builder: (context){
+                  //               return FormPage();
+                  //             })
+                  //           );
+                  //         },
+                  //       child: Text("Book Now"),
+                  //         ),
+                  //       ),
+                  //     ),
+                  // ),
+                  
+
+
+              // Positioned(
+              //       bottom: 10,
+              //       right: 10,
+              //       child: Container(
+                      
+              //         child: FloatingActionButton(
+              //           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25.0)), // This line adds the rounded border
+              //           onPressed: () { 
+              //             Navigator.push(
+              //               context,
+              //               MaterialPageRoute(builder: (context){
+              //                 return FormPage();
+              //               })
+              //             );
+              //            },
+              //            child: Text("Book Now"),
+              //            decoration: const BoxDecoration(
+              //           gradient: LinearGradient(
+              //             begin: Alignment.topRight,
+              //             end: Alignment.bottomLeft,
+              //             colors: [
+              //               Colors.white,
+              //               Colors.blue,
+              //             ],
+              //           ),
+              //         ),
+              //         ),
+              //       ),
+              //     ),
           ],
           
         ),
